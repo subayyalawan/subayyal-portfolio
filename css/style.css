@@ -208,6 +208,45 @@ nav{
                                     About Section start
 ===============================================================================================================*/
 
+.about{
+    background: #12181e;
+}
+
+.aboutSection{
+    display: flex;
+    /* width: 45vw; */
+    justify-content: space-between;
+}
+
+.aboutContent{
+    margin: 100px 0;
+    width: 45%;
+}
+
+.aboutContent h4{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.aboutContent h3{
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+}
+
+.aboutContent p {
+    font-size: 18px;
+    /* color: #6f8498; */
+}
+.aboutImg{
+    width: 45%;
+}
+
+.aboutImg img{
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
+
 
 
 /* ===============================================================================================================
