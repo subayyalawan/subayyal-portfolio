@@ -20,22 +20,23 @@
           <div class="logo">Subayyal</div>
           <div class="mid">
             <ul>
-              <li><a class="nav-link" href="/">Home</a></li>
-              <li><a class="nav-link" href="#About">About</a></li>
-              <li><a class="nav-link" href="#contact">Contact</a></li>
-              <li><a class="nav-link" href="#hello">Hello</a></li>
+              <li class="home nav-link active"><a href="#home">Home</a></li>
+              <li class="about nav-link"><a href="#about">About</a></li>
+              <li class="services nav-link"><a href="#services">Services</a></li>
+              <li class="portfolio nav-link"><a href="#portfolio">Portfolio</a></li>
+              <li class="contact nav-link"><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <div class="right">
-            <button class="contactBtn">Lets Talk?</button>
+            <a href="#contact" class="contactBtn">Lets Talk?</a>
           </div>
         </nav>
       </div>
     </header>
 
-    <main>
+    <section id="home">
       <div class="container">
-        <section class="heroSection">
+        <div class="heroSection">
           <div class="heroContent">
             <h2>
               Hi, I'm Subayyal.<br />A <span id="element"></span><br />Based in
@@ -46,42 +47,201 @@
               <span>1 Year.</span>
             </p>
             <div class="heroButtons" style="margin-top: 25px">
-              <a href="resources/Subayyal Ayub CV.pdf" target="_blank"
+              <a
+                class="downloadcv"
+                href="https://drive.google.com/file/d/1PQ1YNJLI1f3wQXBfIqI8KDsUxeCvZyCw/view?usp=sharing"
+                target="_blank"
                 >Download CV</a
               >
-              <button class="contactBtn">Contact</button>
+              <a href="#contact" class="contactBtn">Contact</a>
             </div>
           </div>
           <div class="heroImg">
-            <img src="resources/subayyal.png" alt="" />
+            <img src="resources/subayyal.png" alt="Subayyal Ayub Image" />
           </div>
-        </section>
-      </div>
-
-      <section class="introSection">
-        <div class="container">
-          <ul class="introBar">
-            <li>10+ <span>Projects Completed</span></li>
-            <li>1 Year <span>Experience</span></li>
-            <li>5+ <span>Satisfied Client</span></li>
-          </ul>
         </div>
-      </section>
-
-      <div class="about">
-        <section class="aboutSection container">
-          <div class="aboutImg">
-            <img src="resources/about.jpg" alt="" />
-          </div>
-          <div class="aboutContent">
-            <h4>WHO IS SUBAYYAL AYUB?</h4>
-            <h3>A Little About Me</h3>
-            <p>I'm Software Engineering graduate, with experience in UI/UX designing and development with a focus on creating user-friendly and visually appealing websites using HTML, CSS, and JavaScript. I'm a Meta certified developer with over 1 year of experience as a Web Developer</p><br>
-            <p>For the past 6 months, I have been working full-time designer and developer. I can design user friendly design and make it into fully functional website. I have worked with over 5 Satisfied clients in the past with over 10+ completed projects.</p>
-          </div>
-        </section>
       </div>
-    </main>
+    </section>
+
+    <section id="introSection">
+      <div class="container">
+        <ul class="introBar">
+          <li>10+ <span>Projects Completed</span></li>
+          <li>1 Year <span>Experience</span></li>
+          <li>5+ <span>Satisfied Client</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="aboutSection container">
+        <div class="aboutImg">
+          <img src="resources/about.jpg" alt="About Img" />
+        </div>
+        <div class="aboutContent">
+          <h4>WHO IS SUBAYYAL AYUB?</h4>
+          <h3>A Little About Me</h3>
+          <p>
+            I'm Software Engineering graduate, with experience in UI/UX
+            designing and development with a focus on creating user-friendly and
+            visually appealing websites using HTML, CSS, and JavaScript. I'm a
+            Meta certified developer with over 1 year of experience as a Web
+            Developer
+          </p>
+          <br />
+          <p>
+            For the past 6 months, I have been working full-time designer and
+            developer. I can design user friendly design and make it into fully
+            functional website. I have worked with over 5 Satisfied clients in
+            the past with over 10+ completed projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="servicesSection container">
+        <div class="servicesContent">
+          <h4>MY SERVICES</h4>
+          <h3>What I do for my clients?</h3>
+          <p>The Services I provide to my clients include</p>
+        </div>
+        <div class="service1">
+          <img src="resources/development.png" alt="Web Development Logo" />
+          <h3>Web Development</h3>
+          <p>
+            I can do Responsive and Mobile Friendly Coding for your Websites
+          </p>
+        </div>
+        <div class="service2">
+          <img src="resources/UI-designing.png" alt="UI Designing Logo" />
+          <h3>UI/UX Designing</h3>
+          <p>
+            I can design User Friendly interfaces for Websites, Applications and
+            other Design Related Tasks
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="portfolioSection container">
+        <div class="portfolioContent">
+          <h4>My Portfolio</h4>
+          <h3>My Previous Work</h3>
+          <p>
+            I have worked with 5+ clients in the past, And I have completed 10+
+            projects for my satisfied clients.
+          </p>
+        </div>
+
+        <div class="project project1">
+          <img
+            src="resources/Portfolio/S-queue.png"
+            alt="S-queue Technology Portfolio" />
+          <div class="projectContent">
+            <div>
+              <h4>S-Queue technology Portfolio</h4>
+              <p>Web Developement</p>
+            </div>
+            <a
+              href="https://s-queue-technology-site.vercel.app/"
+              target="_blank"
+              >Visit live Demo</a
+            >
+          </div>
+          <hr />
+        </div>
+
+        <div class="project project2">
+          <img
+            src="resources/Portfolio/Ekuate Website.png"
+            alt="S-queue Technology Portfolio" />
+          <div class="projectContent">
+            <div>
+              <h4>Ekuate Website</h4>
+              <p>UI/UX Design</p>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1F26YOGHYhHH2-N6U17uuM1VHFB39PSGL/view?usp=sharing"
+              target="_blank"
+              >View Design</a
+            >
+          </div>
+          <hr />
+        </div>
+
+        <div class="project project2">
+          <img
+            src="resources/Portfolio/Ekuate Case Study.png"
+            alt="S-queue Technology Portfolio" />
+          <div class="projectContent">
+            <div>
+              <h4>Ekuate Case Study</h4>
+              <p>Graphic designing</p>
+            </div>
+            <a>View Design</a>
+          </div>
+          <hr />
+        </div>
+
+        <div class="project project2">
+          <img
+            src="resources/Portfolio/Invito Web.png"
+            alt="S-queue Technology Portfolio" />
+          <div class="projectContent">
+            <div>
+              <h4>Invito Web Design</h4>
+              <p>UI/UX Design</p>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1HozGbYe2CIWWjN6rmX8sPswyepN7CYrO/view?usp=sharing"
+              target="_blank"
+              >View Design</a
+            >
+          </div>
+          <hr />
+        </div>
+
+        <div class="project project2">
+          <img
+            src="resources/Portfolio/Inprep.png"
+            alt="S-queue Technology Portfolio" />
+          <div class="projectContent">
+            <div>
+              <h4>InPrep Web Design</h4>
+              <p>UI/UX Design</p>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1GqLYenTlkmmLXIo6aAhPzOfrjbZ9mGYv/view?usp=sharing"
+              target="_blank"
+              >View Design</a
+            >
+          </div>
+          <hr />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contactSection container">
+        <div class="contactContent">
+          <h4>Contact</h4>
+          <h3>Get in Touch</h3>
+        </div>
+        <form class="contactForm" action="">
+          <div>
+            <input type="name" placeholder="Full Name" />
+            <input type="email" placeholder="Your Email" />
+          </div>
+          <textarea name="message" placeholder="message"></textarea>
+        </form>
+        <p class="copyright">
+          All Copyright Reserved. <br />
+          &copy; Subayyal Ayub
+        </p>
+      </div>
+    </section>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

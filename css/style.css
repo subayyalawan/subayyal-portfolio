@@ -6,7 +6,8 @@
     --secondary-font: 'Ubuntu', sans-serif;
 
     --primary-color:rgb(67, 142, 196);
-
+    --secondary-color: rgb(178, 223, 255);
+    --background-color: #12181e;
 }
 
 *{
@@ -25,6 +26,8 @@ body{
 ===============================================================================================================*/
 
 header{
+    z-index: 100;
+    background: #1f2933;
     position: sticky;
     top: 0;
     transition: all ease 0.5s;
@@ -39,8 +42,18 @@ nav{
     transition: all ease 0.5s;
 }
 
+.mid .active {
+    border-bottom: 2px solid var(--primary-color);
+    /* padding-bottom: 10px; */
+    /* color: rgb(255, 0, 43) !important; */
+}
+
+.mid .active a{
+    color: var(--primary-color);
+}
+
 .headerScrolled{
-    background: #12181e;
+    background: var(--background-color);
 }
 
 .headerScrolled nav{
@@ -87,6 +100,7 @@ nav{
 }
 
 .contactBtn{
+    text-decoration: none;
     padding: 8px 15px;
     border: 2px solid var(--primary-color);
     font-family: var(--primary-font);
@@ -105,9 +119,6 @@ nav{
 ===============================================================================================================*/
 
 
-
-
-
 /* ===============================================================================================================
                                     Hero Section Start
 ===============================================================================================================*/
@@ -116,7 +127,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px 0;
+    margin: 150px 0;
 }
 
 .heroContent{
@@ -151,7 +162,7 @@ nav{
     background: #3e4c59;
 }
 
-.heroButtons a{
+.downloadcv{
     text-decoration: none;
     color: white;
     background: var(--primary-color);
@@ -160,7 +171,7 @@ nav{
     margin-right: 10px;
 }
 
-.heroButtons a:hover{
+.downloadcv:hover{
     background: rgb(52, 110, 151);
 }
 
@@ -174,16 +185,17 @@ nav{
                                     Intro bar Section start
 ===============================================================================================================*/
 
-.introSection{
+#introSection{
     background: var(--primary-color);
-    margin: 200px 0;
+    margin: 150px 0;
+    font-family: var(--secondary-font);
 }
 
 .introBar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 130px;
+    height: 160px;
 }
 
 .introBar li{
@@ -195,7 +207,7 @@ nav{
 .introBar li span{
     font-size: 20px;
     display: block;
-    color: #1f2933;
+    color:var(--secondary-color);
 }
 
 /* ===============================================================================================================
@@ -208,13 +220,13 @@ nav{
                                     About Section start
 ===============================================================================================================*/
 
-.about{
-    background: #12181e;
+#about{
+    background: var(--background-color);
+    margin: 150px 0;
 }
 
 .aboutSection{
     display: flex;
-    /* width: 45vw; */
     justify-content: space-between;
 }
 
@@ -243,7 +255,7 @@ nav{
 
 .aboutImg img{
     width: 100%;
-    height: 30vw;
+    height: 600px;
     object-fit: cover;
 }
 
@@ -251,4 +263,193 @@ nav{
 
 /* ===============================================================================================================
                                     About Section end
+===============================================================================================================*/
+
+
+
+/* ===============================================================================================================
+                                    Service Section start
+===============================================================================================================*/
+
+#services{
+    margin: 200px 0;
+}
+
+.servicesSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicesContent{
+    width: 40%;
+}
+
+.servicesContent h4{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.servicesContent h3{
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+}
+
+.servicesContent p {
+    font-size: 18px;
+}
+
+.service1, .service2{
+    width: 25%;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #3e4c59;
+}
+
+.service1 img{
+    padding: 20px 10px;
+    height: 80px;
+    border-radius: 8px;
+    background: var(--secondary-color);
+}
+
+.service2 img{
+    padding: 20px 5px;
+    height: 75px;
+    border-radius: 8px;
+    background: var(--secondary-color);
+    object-fit: contain;
+}
+
+.service1 h3, .service2 h3{
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+.service1 p, .service2 p{
+    font-size: 18px;
+}
+
+/* ===============================================================================================================
+                                    Service Section end
+===============================================================================================================*/
+
+
+/* ===============================================================================================================
+                                    Portfolio Section start
+===============================================================================================================*/
+
+#portfolio{
+    padding: 50px 0;
+    background-color: var(--background-color);
+}
+
+.portfolioContent{
+    text-align: center;
+}
+.portfolioContent h4{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.portfolioContent h3{
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+}
+
+.portfolioContent p {
+    font-size: 18px;
+}
+
+.project {
+    margin: 70px 0;
+}
+.project img{
+    width: 100%;
+    margin: 40px 0;
+}
+
+.project a{
+    text-decoration: none;
+    color: white;
+    background: var(--primary-color);
+    padding: 11px 15px;
+    border-radius: 30px;
+}
+
+.projectContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectContent h4{
+    margin-top: 0.5rem;
+}
+
+.projectContent p{
+    color: var(--secondary-color);
+}
+/* ===============================================================================================================
+                                    Portfolio Section end
+===============================================================================================================*/
+
+
+/* ===============================================================================================================
+                                    contact Section start
+===============================================================================================================*/
+
+#contact{
+    background: #0c0e13;
+    padding-top: 50px;
+}
+
+.contactContent{
+    text-align: center;
+}
+.contactContent h4{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.contactContent h3{
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+}
+
+.contactForm div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.contactForm input, .contactForm textarea{
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    background: black;
+    color: white;
+}
+
+.contactForm input{
+    width: 600px;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm textarea{
+    height: 200px;
+}
+
+.copyright{
+    text-align: center;
+    padding: 50px 0;
+    margin: 0;
+}
+
+/* ===============================================================================================================
+                                    contact Section end
 ===============================================================================================================*/
