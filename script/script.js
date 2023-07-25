@@ -55,3 +55,16 @@ window.addEventListener('scroll', ()=>{
         header.classList.remove("headerScrolled");
     }
 })
+
+let menu = document.querySelector('.mid ul')
+let menuOpen = document.querySelector('.navMenuOpen')
+let menuClose = document.querySelector('.navMenuClose')
+
+menuOpen.addEventListener('click', ()=>{
+  menu.style.display = 'flex'
+  menu.style.top = '0'
+
+})
+menuClose.addEventListener('click', ()=>{
+  menu.style.top = '-100%'
+})

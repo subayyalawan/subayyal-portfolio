@@ -1,0 +1,239 @@
+@media screen and (max-width:1200px) {
+    nav{
+        height: 90px;
+    }
+
+    .navScrolled{
+        height: 70px;
+    }
+    
+    .logo{
+        font-size: 24px;
+    }
+
+    .mid ul li{
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .contactBtn{
+        padding: 7px 12px;
+    }
+
+    .heroImg img{
+        width: 35vw;
+    }
+
+    .heroContent h2{
+        font-size: 45px;
+    }
+
+    .heroContent p{
+        font-size: 18px;
+    }
+
+    .downloadcv{
+        padding: 8px 12px;
+
+    }
+
+    .serviceContent{
+        width: 30%;
+    }
+
+    .service1, .service2{
+        width: 28%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    nav{
+        height: 80px;
+    }
+
+    .navScrolled{
+        height: 60px;
+    }
+
+    .logo{
+        font-size: 22px;
+    }
+
+    .mid ul li{
+        font-size: 16px;
+        margin: 16px;
+    }
+
+    .contactBtn{
+        padding: 5px 9px;
+    }
+
+    .heroImg img{
+        width: 35vw;
+    }
+
+    .heroContent h2{
+        font-size: 34px;
+    }
+
+    .heroContent p{
+        font-size: 16px;
+    }
+
+    .downloadcv{
+        padding: 6px 10px;
+
+    }
+
+    .serviceContent{
+        width: 30%;
+    }
+
+    .service1, .service2{
+        width: 28%;
+    }
+
+    .aboutImg{
+        display: none;
+    }
+
+    .aboutSection{
+        background: linear-gradient(rgba(18, 24, 30, 0.85),rgba(18, 24, 30, 0.85)), url('/resources/about.jpg');
+        object-fit: cover;
+        text-align: center;
+    }
+
+    .aboutContent{
+        width: 100%;
+        margin: 100px;
+    }
+
+    .servicesSection{
+        flex-direction: column;
+    }
+
+    .servicesContent{
+        width: 90%;
+        text-align: center;
+    }
+
+    .service1, .service2{
+        width: 50%;
+        height: 300px;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .heroContent{
+        height: 50%;
+    }
+    .heroImg{
+        height: 50%;
+    }
+
+    .introBar{
+        flex-direction: column;
+        height: 45vh;
+    }
+
+    .logo{
+        margin-right: auto;
+    }
+    .mid ul{
+        background-color: var(--background-color);
+        position: fixed;
+        top:0;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .navMenuClose{
+        display: block;
+    }
+
+    .navMenuClose:hover{
+        color: var(--primary-color);
+    }
+
+    .navMenuOpen{
+        display: block;
+    }
+
+    .navIcons{
+        display: inline-block;
+    }
+    .service1, .service2{
+        width: 65%;
+    }
+
+    .icons i{
+        font-size: 1.5rem;
+    }
+
+    .footer .logo{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .heroSection{
+        flex-direction: column-reverse;
+        margin: 80px 0;
+    }
+    .heroImg{
+        width: 70%;
+        height: 75%;
+        padding: 20px;
+    }
+    .heroImg img{
+        width: 100%;
+    }
+
+    .heroContent{
+        width: 75%;
+        height: 75%;
+    }
+    
+    .introBar li{
+        padding: 8px;
+    }
+    .aboutContent{
+        margin: 40px;
+    }
+    .service1, .service2{
+        width: 80%;
+    }
+
+    .portfolioContent h3{
+        font-size: 1.4rem;
+    }
+    .portfolioContent p{
+        font-size: 1rem;
+    }
+
+    .project a{
+        padding: 8px 10px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .heroImg{
+        height: 100%;
+        width: 100%;
+    }
+
+    .heroContent{
+        width: 100%;
+    }
+
+    .aboutContent{
+        margin: 20px;
+    }
+}
