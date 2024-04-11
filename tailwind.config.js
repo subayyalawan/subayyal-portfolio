@@ -14,7 +14,8 @@ export default {
       },
       colors: {
         "Primary-Color": "rgba(18, 247, 214)",
-        "Background": "#292f36"
+        "Background": "#292f36",
+        "light-text": "#232320"
       }
     },
 

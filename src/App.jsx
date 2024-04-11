@@ -34,7 +34,7 @@ const App = () => {
 
   return (
     <>
-      <div className='dark:bg-Background light:bg-white min-h-screen w-full dark:text-white text-black transition-all duration-300'>
+      <div className='dark:bg-Background light:bg-white min-h-screen w-full dark:text-white text-light-text transition-all duration-300'>
         <RouterProvider router={router} />
       </div>
     </>
